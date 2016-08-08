@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+</head>
+<body>
+        <form method="post" action="">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <input type="submit" value="Login">
+             {% if Wrong_values%}
+               <p>{{ Wrong_values }}</p>
+            {% endif %}
+
+        </form>
+
+</body>
+</html>

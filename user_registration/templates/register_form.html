@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+        <form method="post"  name="formValidation">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+            <label for="phone_no">Phone No:</label>
+        <input type="text" id="phone" name="phone">
+        <input type="submit" value="Register">
+
+            {% if Invalid or user_exist%}
+                <p>{{ Invalid }}</p>
+                <p>{{ user_exist }}</p>
+            {% endif %}
+
+        </form>
+
+
+
+</body>
+</html>
